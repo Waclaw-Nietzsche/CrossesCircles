@@ -1,0 +1,29 @@
+@CHARSET "utf-8";
+
+#arrow_player
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 150px;
+}
+
+#arrow_ai
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 150px;
+}
+
+div.sticky_big
+{
+    position: -webkit-sticky;
+    position: sticky;
+    font: bold oblique 150% serif;
+}
+
+div.sticky_small
+{
+    position: -webkit-sticky;
+    position: sticky;
+    font: bold oblique 100% serif;
+}
