@@ -1,4 +1,4 @@
-package model;
+package servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,12 +22,12 @@ public class StartServlet extends HttpServlet
         String player1 = request.getParameter("player1");
         String player2 = request.getParameter("player2");
 
-        HttpSession hsession = request.getSession();
-        hsession.setAttribute("Play1", player1);
-        hsession.setAttribute("Play2", player2);
-        hsession.setAttribute("session_array", table);
-        hsession.setAttribute("player_name", player1);
-        hsession.setAttribute("flag","1");
-        response.sendRedirect("model/Game.jsp");
+        HttpSession session = request.getSession();
+        session.setAttribute("Play1", player1);
+        session.setAttribute("Play2", player2);
+        session.setAttribute("session_array", table);
+        session.setAttribute("player_name", player1);
+        session.setAttribute("flag","1");
+        response.sendRedirect("jspset/Game.jsp");
     }
 }
