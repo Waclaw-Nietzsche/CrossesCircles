@@ -1,20 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Игра вдвоём</title>
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <style>
+        body,h1 {font-family: "Oswald", sans-serif}
+        body, html {height: 100%}
+        .bgimg
+        {
+            background-image: url('views/background.png');
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        .button
+        {
+            border-radius: 4px;
+            background-color: #f4511e;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            border: 2px solid #4CAF50;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 15px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: auto;
+        }
+        .button span
+        {
+            cursor: pointer;
+            display: inline-block;
+            position: center;
+            transition: 0.5s;
+        }
+        .button span:after
+        {
+            content: '\00bb';
+            position: center;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .button:hover span
+        {
+            padding-right: 25px;
+        }
+        .button:hover span:after
+        {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
 
-    <body bgcolor="Silver">
-            <form action="StartServlet" method="post">
-                <div class="sticky_small">Имя игрока №1:</div>
-                <input type="text" name="player1" required><br><br>
-                <div class="sticky_small">Имя игрока №2:</div>
-                <input type="text" name="player2" required><br><br>
-                <input type="submit" value="Играть"><br><br>
-            </form>
-            <form action="index.html">
-                <input type="submit" value="В главное меню">
-            </form>
+    <body>
+
+            <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+                <form action="StartServlet" method="post">
+                <div align="center" class="w3-display-middle">
+                    <br action="StartServlet" method="post">
+                        <div class="w3-xlarge">Введите имя первого игрока:</div>
+                        <p align="left"><input class="w3-input w3-border w3-hover-grey" type="text" name="player1" required></p>
+                        <div class="w3-xlarge">Введите имя второго игрока:</div>
+                        <p align="left"><input class="w3-input w3-border w3-hover-grey" type="text" name="player2" required></p>
+                        <button class="button" type="submit" >Играть</button>
+                </div>
+                </form>
+                <a href="index.html" class="button"><span>В главное меню</span></a>
+            </div>
+
+
     </body>
 </html>
