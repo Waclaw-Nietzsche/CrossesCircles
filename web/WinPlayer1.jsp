@@ -84,43 +84,43 @@
     <p align="center"><table><table background="javascript/gameboard.png" cellpadding="19" border="red">
         <tr>
             <td>
-                <button id ="b1">
+                <button id ="fb1">
                     <%if(a[0][0]=='X')
                     {%>
                     <script type="text/javascript">
-                        changeItemToX("b1");
+                        changeItemToX("fb1");
                     </script>
                     <%}if(a[0][0]=='0'){%>
                     <script type="text/javascript">
-                        changeItemToO("b1");
+                        changeItemToO("fb1");
                     </script>
                     <%} %>
                 </button>
             </td>
             <td>
-                <button id ="b2">
+                <button id ="fb2">
                     <%if(a[0][1]=='X')
                     {%>
                     <script type="text/javascript">
-                        changeItemToX("b2");
+                        changeItemToX("fb2");
                     </script>
                     <%}if(a[0][1]=='0'){%>
                     <script type="text/javascript">
-                        changeItemToO("b2");
+                        changeItemToO("fb2");
                     </script>
                     <%}%>
                 </button>
             </td>
             <td>
-                <button id ="b3">
+                <button id ="fb3">
                     <%if(a[0][2]=='X')
                     {%>
                     <script type="text/javascript">
-                        changeItemToX("b3");
+                        changeItemToX("fb3");
                     </script>
                     <%}if(a[0][2]=='0'){%>
                     <script type="text/javascript">
-                        changeItemToO("b3");
+                        changeItemToO("fb3");
                     </script>
                     <%}%>
                 </button>
@@ -128,43 +128,43 @@
         </tr>
         <tr>
             <td>
-                <button id ="b4">
+                <button id ="fb4">
                     <%if(a[1][0]=='X')
                     {%>
                     <script type="text/javascript">
-                        changeItemToX("b4");
+                        changeItemToX("fb4");
                     </script>
                     <%}if(a[1][0]=='0'){%>
                     <script type="text/javascript">
-                        changeItemToO("b4");
+                        changeItemToO("fb4");
                     </script>
                     <%}%>
                 </button>
             </td>
             <td>
-                <button id ="b5">
+                <button id ="fb5">
                     <%if(a[1][1]=='X')
                     {%>
                     <script type="text/javascript">
-                        changeItemToX("b5");
+                        changeItemToX("fb5");
                     </script>
                     <%}if(a[1][1]=='0'){%>
                     <script type="text/javascript">
-                        changeItemToO("b5");
+                        changeItemToO("fb5");
                     </script>
                     <%}%>
                 </button>
             </td>
             <td>
-                <button id ="b6">
+                <button id ="fb6">
                     <%if(a[1][2]=='X')
                     {%>
                     <script type="text/javascript">
-                        changeItemToX("b6");
+                        changeItemToX("fb6");
                     </script>
                     <%}if(a[1][2]=='0'){%>
                     <script type="text/javascript">
-                        changeItemToO("b6");
+                        changeItemToO("fb6");
                     </script>
                     <%}%>
                 </button>
@@ -172,43 +172,43 @@
         </tr>
         <tr>
             <td>
-                <button id ="b7">
+                <button id ="fb7">
                     <%if(a[2][0]=='X')
                     {%>
                     <script type="text/javascript">
-                        changeItemToX("b7");
+                        changeItemToX("fb7");
                     </script>
                     <%}if(a[2][0]=='0'){%>
                     <script type="text/javascript">
-                        changeItemToO("b7");
+                        changeItemToO("fb7");
                     </script>
                     <%}%>
                 </button>
             </td>
             <td>
-                <button id ="b8">
+                <button id ="fb8">
                     <%if(a[2][1]=='X')
                     {%>
                     <script type="text/javascript">
-                        changeItemToX("b8");
+                        changeItemToX("fb8");
                     </script>
                     <%}if(a[2][1]=='0'){%>
                     <script type="text/javascript">
-                        changeItemToO("b8");
+                        changeItemToO("fb8");
                     </script>
                     <%}%>
                 </button>
             </td>
             <td>
-                <button id ="b9">
+                <button id ="fb9">
                     <%if(a[2][2]=='X')
                     {%>
                     <script type="text/javascript">
-                        changeItemToX("b9");
+                        changeItemToX("fb9");
                     </script>
                     <%}if(a[2][2]=='0'){%>
                     <script type="text/javascript">
-                        changeItemToO("b9");
+                        changeItemToO("fb9");
                     </script>
                     <%}%>
                 </button>
@@ -230,15 +230,9 @@
                 <%if(a[0][0]=='X')
                 {%>
                 <script type="text/javascript">
-                    changeItemToXHor("b1");
-                    changeItemToXHor("b2");
-                    changeItemToXHor("b3");
-                </script>
-                <%}if(a[0][0]=='0'){%>
-                <script type="text/javascript">
-                    changeItemToOHor("b1");
-                    changeItemToOHor("b2");
-                    changeItemToOHor("b3");
+                    changeItemToXHor("fb1");
+                    changeItemToXHor("fb2");
+                    changeItemToXHor("fb3");
                 </script>
                 <%}
                 %>
@@ -247,15 +241,9 @@
                 <%if(a[0][0]=='X')
                 {%>
                 <script type="text/javascript">
-                    changeItemToXMiddle("b1");
-                    changeItemToXMiddle("b4");
-                    changeItemToXMiddle("b7");
-                </script>
-                <%}if(a[0][0]=='0'){%>
-                <script type="text/javascript">
-                    changeItemToOMiddle("b1");
-                    changeItemToOMiddle("b4");
-                    changeItemToOMiddle("b7");
+                    changeItemToXMiddle("fb1");
+                    changeItemToXMiddle("fb4");
+                    changeItemToXMiddle("fb7");
                 </script>
                 <%}
                 %>
@@ -264,100 +252,64 @@
                 <%if(a[0][0]=='X')
                 {%>
                 <script type="text/javascript">
-                    changeItemToXLR("b1");
-                    changeItemToXLR("b5");
-                    changeItemToXLR("b9");
-                </script>
-                <%}if(a[0][0]=='0'){%>
-                <script type="text/javascript">
-                    changeItemToOLR("b1");
-                    changeItemToOLR("b5");
-                    changeItemToOLR("b9");
+                    changeItemToXLR("fb1");
+                    changeItemToXLR("fb5");
+                    changeItemToXLR("fb9");
                 </script>
                 <%}
                 %>
                 <% break;
         case 6 :%>
-                <%if(a[0][0]=='X')
+                <%if(a[0][2]=='X')
                 {%>
                 <script type="text/javascript">
-                    changeItemToXRL("b3");
-                    changeItemToXRL("b5");
-                    changeItemToXRL("b7");
-                </script>
-                <%}if(a[0][0]=='0'){%>
-                <script type="text/javascript">
-                    changeItemToORL("b3");
-                    changeItemToORL("b5");
-                    changeItemToORL("b7");
+                    changeItemToXRL("fb3");
+                    changeItemToXRL("fb5");
+                    changeItemToXRL("fb7");
                 </script>
                 <%}
                 %>
                 <% break;
         case 7 :%>
-                <%if(a[0][0]=='X')
+                <%if(a[1][0]=='X')
                 {%>
                 <script type="text/javascript">
-                    changeItemToXHor("b4");
-                    changeItemToXHor("b5");
-                    changeItemToXHor("b6");
-                </script>
-                <%}if(a[0][0]=='0'){%>
-                <script type="text/javascript">
-                    changeItemToOHor("b4");
-                    changeItemToOHor("b5");
-                    changeItemToOHor("b6");
+                    changeItemToXHor("fb4");
+                    changeItemToXHor("fb5");
+                    changeItemToXHor("fb6");
                 </script>
                 <%}
                 %>
                 <% break;
         case 8 :%>
-                <%if(a[0][0]=='X')
+                <%if(a[2][0]=='X')
                 {%>
                 <script type="text/javascript">
-                    changeItemToXHor("b7");
-                    changeItemToXHor("b8");
-                    changeItemToXHor("b9");
-                </script>
-                <%}if(a[0][0]=='0'){%>
-                <script type="text/javascript">
-                    changeItemToOHor("b7");
-                    changeItemToOHor("b8");
-                    changeItemToOHor("b9");
+                    changeItemToXHor("fb7");
+                    changeItemToXHor("fb8");
+                    changeItemToXHor("fb9");
                 </script>
                 <%}
                 %>
                 <% break;
         case 9 :%>
-                <%if(a[0][0]=='X')
+                <%if(a[0][1]=='X')
                 {%>
                 <script type="text/javascript">
-                    changeItemToXMiddle("b2");
-                    changeItemToXMiddle("b5");
-                    changeItemToXMiddle("b8");
-                </script>
-                <%}if(a[0][0]=='0'){%>
-                <script type="text/javascript">
-                    changeItemToOMiddle("b2");
-                    changeItemToOMiddle("b5");
-                    changeItemToOMiddle("b8");
+                    changeItemToXMiddle("fb2");
+                    changeItemToXMiddle("fb5");
+                    changeItemToXMiddle("fb8");
                 </script>
                 <%}
                 %>
                 <% break;
         case 10 :%>
-                <%if(a[0][0]=='X')
+                <%if(a[0][2]=='X')
                 {%>
                 <script type="text/javascript">
-                    changeItemToXMiddle("b3");
-                    changeItemToXMiddle("b6");
-                    changeItemToXMiddle("b9");
-                </script>
-                <%}if(a[0][0]=='0'){%>
-                <script type="text/javascript">
-                    changeItemToOMiddle("b3");
-                    changeItemToOMiddle("b6");
-                    changeItemToOMiddle("b9");
+                    changeItemToXMiddle("fb3");
+                    changeItemToXMiddle("fb6");
+                    changeItemToXMiddle("fb9");
                 </script>
                 <%}
                 %>
