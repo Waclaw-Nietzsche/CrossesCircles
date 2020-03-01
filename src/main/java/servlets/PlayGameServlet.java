@@ -27,6 +27,7 @@ public class PlayGameServlet extends HttpServlet
         response.sendRedirect("Game.jsp");
     }
 
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         response.setContentType("text/html");

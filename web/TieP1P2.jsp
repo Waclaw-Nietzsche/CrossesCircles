@@ -217,7 +217,6 @@
     <form action="PlayGameServlet" method="post">
         <div align="center">
             <button class="bbutton" type="submit" id="PlayAg"><span>Сыграть ещё раз</span></button>
-<%--            <a href="index.html" class="bbutton"><span>В главное меню</span></a>--%>
         </div>
     </form>
     </body>
