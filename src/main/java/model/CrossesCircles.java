@@ -59,27 +59,6 @@ public class CrossesCircles
         }
     }
 
-    // Добавление крестика или нолика компьютером
-    public int addAI(int x, int y)
-    {
-        if (x < 3 && y < 3)
-        {
-            if (gametable[x][y] == ' ')
-            {
-                gametable[x][y] = 'X';
-                return 1;
-            }
-            else
-            {
-                return 0;
-            }
-        }
-        else
-        {
-            return 0;
-        }
-    }
-
     public int[] checkGameTable()
     {
         int x, y;
@@ -129,7 +108,7 @@ public class CrossesCircles
                 symbol = gametable[0][x];
                 if(x == 0)
                     line[0] = 4;
-                else if(x==1)
+                else if(x == 1)
                     line[0] = 9;
                 else
                     line[0] = 10;
@@ -162,13 +141,12 @@ public class CrossesCircles
                     if(symbol == 'X')
                     {
                         line[1] = 1;
-                        return line;
                     }
                     else
                     {
                         line[1] = 2;
-                        return line;
                     }
+                    return line;
                 }
             }
             count = 0;
@@ -195,42 +173,4 @@ public class CrossesCircles
         return line;
     }
 
-    public int move()
-    {
-        if(gametable[1][1]==' ')
-        {
-            gametable[1][1]='0';
-            return 1;
-        }
-        for(int i = 0; i <= 2; )
-        {
-            if(gametable[i][0] == ' ')
-            {
-                gametable[i][0] = '0';
-                return 1;
-            }
-            if(gametable[i][2] == ' ')
-            {
-                gametable[i][2] = '0';
-                return 1;
-            }
-            i += 2;
-        }
-        for(int i=0; i <= 1; i++)
-        {
-            int j = 1;
-            if(gametable[i][j] == ' ')
-            {
-                gametable[i][j] = '0';
-                return 1;
-            }
-            if(gametable[j][i] == ' ')
-            {
-                gametable[j][i] = '0';
-                return 1;
-            }
-            j++;
-        }
-        return 0;
-    }
 }

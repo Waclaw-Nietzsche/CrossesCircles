@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <title>Крестики-Нолики</title>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="javascript/LanguageControl.js"></script>
+    </head>
+    <title lang="ru">Крестики-Нолики</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -56,24 +60,29 @@
             right: 0;
         }
     </style>
-
     <body>
         <div class="bgimg w3-display-container w3-text-white">
+            <button id="switch-lang" class="w3-display-topright">EN/RU</button>
             <div class="w3-display-topleft w3-padding-large w3-xlarge">
-                СПбГЭТУ «ЛЭТИ»
+                <span lang="ru">СПбГЭТУ «ЛЭТИ»</span>
+                <span lang="en">SPSETU «LETI»</span>
             </div>
             <div align="center" class="w3-display-middle">
-                <h1 class="w3-jumbo w3-animate-top">Крестики-Нолики</h1>
+                <h1 lang="ru" class="w3-jumbo w3-animate-top">Крестики-Нолики</h1>
+                <h1 lang="en" class="w3-jumbo w3-animate-top">Tic-Tac-Toe</h1>
                 <br></br>
-                <a href="vsplay.html" class="button"><span>Два игрока</span></a>
-                <a href="aiplay.html" class="button"><span>Против AI</span></a>
+                <a lang="ru" href="vsplay.html" class="button"><span>Два игрока</span></a>
+                <a lang="en" href="vsplay.html" class="button"><span>Two players</span></a>
                 <br></br>
                 <br></br>
                 <hr class="w3-border-grey" style="margin: auto; width: 40%">
                 <p class="w3-large w3-center">2020</p>
             </div>
-            <div class="w3-display-bottomleft w3-padding-large">
+            <div lang="ru" class="w3-display-bottomleft w3-padding-large">
                 Разработано <a href="https://github.com/Waclaw-Nietzsche" target="_blank">Waclaw-Nietzsche</a>
+            </div>
+            <div lang="en" class="w3-display-bottomleft w3-padding-large">
+                Developed by <a href="https://github.com/Waclaw-Nietzsche" target="_blank">Waclaw-Nietzsche</a>
             </div>
         </div>
     </body>
