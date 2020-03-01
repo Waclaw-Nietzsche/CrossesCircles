@@ -3,4 +3,33 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <display-name>Login</display-name>
+    <!--Определение ограничений и безопасности -->
+    <security-constraint>
+        <display-name>JSP CirclesCrosses Constraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>circlescrosses</web-resource-name>
+            <description/>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description/>
+            <role-name>student</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <!--Определение настроек логина -->
+    <login-config>
+<!--        Приложение использует пользовательскую аутентификацию на основе форм -->
+        <auth-method>FORM</auth-method>
+        <realm-name>CirclesCrossesGame</realm-name>
+        <form-login-config>
+            <form-login-page>/login.jsp</form-login-page>
+            <form-error-page>/error.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+    <!-- Определяет форму допуска -->
+    <security-role>
+        <description/>
+        <role-name>student</role-name>
+    </security-role>
 </web-app>
