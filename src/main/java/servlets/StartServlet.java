@@ -28,6 +28,6 @@ public class StartServlet extends HttpServlet
         session.setAttribute("session_array", table);
         session.setAttribute("player_name", player1);
         session.setAttribute("flag","1");
-        response.sendRedirect("jspset/Game.jsp");
+        response.sendRedirect("Game.jsp");
     }
 }

@@ -24,7 +24,7 @@ public class PlayGameServlet extends HttpServlet
         String player_1= (String)session.getAttribute("Play1");
         CrsCrc.clear();
         session.setAttribute("player_name", player_1);
-        response.sendRedirect("Play.jsp");
+        response.sendRedirect("Game.jsp");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
@@ -85,7 +85,7 @@ public class PlayGameServlet extends HttpServlet
                 session.setAttribute("player_name", player_2);
             char[][] table = CrsCrc.gametable;
             session.setAttribute("session_array", table);
-            response.sendRedirect("jspset/Game.jsp");
+            response.sendRedirect("Game.jsp");
         }
         else if(z > 4)
         {
@@ -93,30 +93,30 @@ public class PlayGameServlet extends HttpServlet
             session.setAttribute("line", table[0]);
             if(table[1] == 1)
             {
-                response.sendRedirect("WinPL1.jsp");
+                response.sendRedirect("WinPlayer1.jsp");
             }
             else if(table[1] == 2)
             {
-                response.sendRedirect("WinPL2.jsp");
+                response.sendRedirect("WinPlayer2.jsp");
                 z = 10;
             }
             else if(z == 9)
             {
-                response.sendRedirect("DrawPVP.jsp");
+                response.sendRedirect("TieP1P2.jsp");
             }
 
             else
             {
                 char[][] gametable = CrsCrc.gametable;
                 session.setAttribute("session_array", gametable);
-                response.sendRedirect("jspset/Game.jsp");
+                response.sendRedirect("Game.jsp");
             }
         }
         else
         {
             char[][] gametable = CrsCrc.gametable;
             session.setAttribute("session_array",gametable);
-            response.sendRedirect("jspset/Game.jsp");
+            response.sendRedirect("Game.jsp");
 
         }
     }
