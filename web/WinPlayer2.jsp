@@ -77,7 +77,9 @@
     <tr>
         <th id="player">Победитель: </th>
         <th id="player1">
-            <% String s=(String)session.getAttribute("Play2");%> <%=s%>
+            <% String s=(String)session.getAttribute("Play2");
+//                s = new String(s.getBytes("ISO-8859-1"),"UTF8");
+            %> <%=s%>
         </th>
     </tr>
 </table></p>

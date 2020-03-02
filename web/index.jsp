@@ -1,11 +1,17 @@
-<!DOCTYPE html>
+<%--
+  Created by IntelliJ IDEA.
+  User: Slava
+  Date: 27.02.2020
+  Time: 20:21
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="javascript/LanguageControl.js"></script>
     </head>
     <title>Крестики-Нолики</title>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -71,8 +77,8 @@
                 <h1 lang="ru" class="w3-jumbo w3-animate-top">Крестики-Нолики</h1>
                 <h1 lang="en" class="w3-jumbo w3-animate-top">Tic-Tac-Toe</h1>
                 <br></br>
-                <a lang="ru" href="vsplay.html" class="button"><span>Два игрока</span></a>
-                <a lang="en" href="vsplay.html" class="button"><span>Two players</span></a>
+                <a lang="ru" href="vsplay.jsp" class="button"><span>Два игрока</span></a>
+                <a lang="en" href="vsplay.jsp" class="button"><span>Two players</span></a>
                 <br></br>
                 <br></br>
                 <hr class="w3-border-grey" style="margin: auto; width: 40%">

@@ -21,8 +21,9 @@ public class PlayGameServlet extends HttpServlet
     {
         z = 0;
         HttpSession session = request.getSession();
-        String player_1= (String)session.getAttribute("Play1");
+        String player_1 = (String)session.getAttribute("Play1");
         CrsCrc.clear();
+//        player_1 = new String(player_1.getBytes("ISO-8859-1"),"UTF8");
         session.setAttribute("player_name", player_1);
         response.sendRedirect("Game.jsp");
     }
@@ -33,7 +34,9 @@ public class PlayGameServlet extends HttpServlet
         response.setContentType("text/html");
         HttpSession session = request.getSession();
         String player_1 = (String)session.getAttribute("Play1");
+//        player_1 = new String(player_1.getBytes("ISO-8859-1"),"UTF8");
         String player_2 = (String)session.getAttribute("Play2");
+//        player_2 = new String(player_2.getBytes("ISO-8859-1"),"UTF8");
         String req = request.getParameter("a");
         int play = Integer.parseInt(req);
         int x = 0, y = 0;
