@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
     <head>
         <title>Аутентификация</title>
@@ -42,10 +43,10 @@
     <body class="logimg">
         <div align="center" class="w3-display-middle">
             <form name="loginForm" method="POST" action="j_security_check">
-                <h1 class="w3-jumbo w3-animate-top">Добро пожаловать</h1>
-                <p align="left">Введите логин: <input class="w3-input w3-border w3-hover-grey" type="text" name="j_username" required></p>
-                <p align="left">Введите пароль: <input class="w3-input w3-border w3-hover-grey" type="password" name="j_password" required></p>
-                <p><input class="bbutton" type="submit" value="Подтвердить"/></p>
+                    <h1 class="w3-jumbo w3-animate-top">Добро пожаловать</h1>
+                    <p align="left">Введите логин: <input class="w3-input w3-border w3-hover-grey" type="text" name="j_username" required></p>
+                    <p align="left">Введите пароль: <input class="w3-input w3-border w3-hover-grey" type="password" name="j_password" required></p>
+                    <p><input class="bbutton" type="submit" value="Подтвердить"/></p>
             </form>
         </div>
     </body>
