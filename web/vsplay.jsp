@@ -13,57 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-        <style>
-            body,h1 {font-family: "Oswald", sans-serif}
-            body, html {height: 100%}
-            .bgimg
-            {
-                background-image: url('views/background.png');
-                min-height: 100%;
-                background-position: center;
-                background-size: cover;
-            }
-            .bbutton
-            {
-                border-radius: 4px;
-                background-color: #f4511e;
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-                border: 2px solid #4CAF50;
-                color: #FFFFFF;
-                text-align: center;
-                font-size: 15px;
-                padding: 20px;
-                width: 200px;
-                transition: all 0.5s;
-                cursor: pointer;
-                margin: auto;
-            }
-            .bbutton span
-            {
-                cursor: pointer;
-                display: inline-block;
-                position: center;
-                transition: 0.5s;
-            }
-            .bbutton span:after
-            {
-                content: '\00bb';
-                position: center;
-                opacity: 0;
-                top: 0;
-                right: -20px;
-                transition: 0.5s;
-            }
-            .bbutton:hover span
-            {
-                padding-right: 25px;
-            }
-            .bbutton:hover span:after
-            {
-                opacity: 1;
-                right: 0;
-            }
-        </style>
+        <link rel="stylesheet" href="cssfiles/Style.css"/>
     </head>
     <body>
         <div class="bgimg w3-display-container w3-text-white">

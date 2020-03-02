@@ -66,8 +66,9 @@
     </head>
     <body class="bgimg">
         <div align="center" class="w3-display-middle">
-            <div align="center" class="w3-display-middle">
+            <br align="center" class="w3-display-middle">
                 <h2 class="w3-jumbo w3-animate-top">Ошибка</h2>
+                <br></br>
                 <a href="index.jsp" class="button"><span>Повторить</span></a>
             </div>
         </div>

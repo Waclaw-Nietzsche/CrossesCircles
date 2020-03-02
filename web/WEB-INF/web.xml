@@ -32,11 +32,11 @@
         <description/>
         <role-name>student</role-name>
     </security-role>
+    <!-- Фильтрует кириллицу и отображает её верным образом -->
     <filter>
         <filter-name>CharacterSetFilter</filter-name>
         <filter-class>model.CharacterSetFilter</filter-class>
     </filter>
-
     <filter-mapping>
         <filter-name>CharacterSetFilter</filter-name>
         <url-pattern>/*</url-pattern>
