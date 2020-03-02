@@ -25,9 +25,9 @@
         <tr>
             <th id="player">Победитель: </th>
             <th id="player1">
-                <% String s=(String)session.getAttribute("Play1");
-//                    s = new String(s.getBytes("ISO-8859-1"),"UTF8");
-                %> <%=s%>
+                <% String s1 =(String)session.getAttribute("Play1");
+                   String s2 =(String)session.getAttribute("Play2");
+                %> <%=s1%>
             </th>
         </tr>
     </table></p>
@@ -175,6 +175,11 @@
         <div align="center">
             <button class="bbutton" type="submit" name="act" value="Exit"><span>Закончить игру</span></button>
         </div>
+    </form>
+    <form class="w3-display-bottommiddle" action="Cookies" method="get">
+        <input class="w3-input w3-border w3-hover-grey" type="hidden" name="player1" value=<%=s1%>>
+        <input class="w3-input w3-border w3-hover-grey" type="hidden" name="player2" value=<%=s2%>>
+        <button lang="ru" class="bbutton" type="submit">Сохранить результат</button>
     </form>
 
     <%

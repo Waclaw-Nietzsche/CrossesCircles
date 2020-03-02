@@ -34,7 +34,7 @@ public class PlayGameServlet extends HttpServlet
         {
             z = 0;
             CrsCrc.clear();
-            response.sendRedirect("logout.jsp");
+            response.sendRedirect("index.jsp");
         }
         else
         { }

@@ -23,6 +23,15 @@
                 <span lang="ru">СПбГЭТУ «ЛЭТИ»</span>
                 <span lang="en">SPSETU «LETI»</span>
             </div>
+            <div class="w3-display-bottomright w3-padding-large w3-xlarge">
+                    <%
+                    if (((String)session.getAttribute("player1") != null) && ((String)session.getAttribute("player2") != null))
+                    {
+                    %>
+                        <span lang="ru">Последний победитель <%=(String)session.getAttribute("player1")%> и проиграваший <%=(String)session.getAttribute("player2")%></span>
+                        <span lang="en">Last winner <%=(String)session.getAttribute("player1")%> and looser <%=(String)session.getAttribute("player2")%></span>
+                    <%}%>
+            </div>
             <div align="center" class="w3-display-middle">
                 <h1 lang="ru" class="w3-jumbo w3-animate-top">Крестики-Нолики</h1>
                 <h1 lang="en" class="w3-jumbo w3-animate-top">Tic-Tac-Toe</h1>

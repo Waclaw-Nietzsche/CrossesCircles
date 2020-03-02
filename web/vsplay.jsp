@@ -30,9 +30,6 @@
                     <button lang="en" class="bbutton" type="submit" >Play</button>
                 </div>
             </form>
-<%--            <form action="CookieServlet" method="get">--%>
-<%--                <button lang="ru" class="bbutton w3-display-topmiddle" type="submit">Сохранить игроков</button>--%>
-<%--            </form>--%>
             <button id="switch-lang" class="w3-display-topright">EN/RU</button>
             <a lang="ru" href="index.jsp" class="bbutton"><span>В главное меню</span></a>
             <a lang="en" href="index.jsp" class="bbutton"><span>Back to main menu</span></a>
