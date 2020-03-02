@@ -36,8 +36,20 @@
                 <h1 lang="ru" class="w3-jumbo w3-animate-top">Крестики-Нолики</h1>
                 <h1 lang="en" class="w3-jumbo w3-animate-top">Tic-Tac-Toe</h1>
                 <br></br>
-                <a lang="ru" href="vsplay.jsp" class="bbutton"><span>Два игрока</span></a>
-                <a lang="en" href="vsplay.jsp" class="bbutton"><span>Two players</span></a>
+                <%
+                    if (((String)session.getAttribute("player1") != null) && ((String)session.getAttribute("player2") != null))
+                    {
+                %>
+                <form action="PlayGameServlet" method="post">
+                    <button lang="ru" class="bbutton" type="submit" name="act" value="PlayAgain"><span>Сыграть ещё раз</span></button>
+                    <button lang="en" class="bbutton" type="submit" name="act" value="PlayAgain"><span>Play again</span></button>
+                </form>
+                <%}
+                else
+                { %>
+                    <a lang="ru" href="vsplay.jsp" class="bbutton"><span>Два игрока</span></a>
+                    <a lang="en" href="vsplay.jsp" class="bbutton"><span>Two players</span></a>
+                <%}%>
                 <br></br>
                 <br></br>
                 <a lang="ru" href="logout.jsp" class="bbutton"><span>Выход</span></a>
