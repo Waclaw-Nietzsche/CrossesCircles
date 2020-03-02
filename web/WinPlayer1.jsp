@@ -63,7 +63,6 @@
                 right: 0;
             }
         </style>
-
         <link rel="stylesheet" href="cssfiles/Style.css">
         <script src="javascript/GameProcess.js"></script>
     </head>
