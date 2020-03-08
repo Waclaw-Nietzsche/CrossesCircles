@@ -6,6 +6,9 @@ import javax.servlet.http.*;
 import java.io.IOException;
 
 
+/**
+ * Сервлет обеспечения куки
+ */
 @WebServlet("/Cookies")
 public class Cookies extends HttpServlet
 {

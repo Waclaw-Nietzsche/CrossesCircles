@@ -1,10 +1,15 @@
 package model;
 
+/**
+ * Структура крестиков ноликов
+ */
 public class CrossesCircles
 {
     public char gametable[][] = new char[3][3];
 
-    // Конструктор игрового поля
+    /**
+     * Конструктор игрового поля
+     */
     public CrossesCircles()
     {
         for (int x = 0; x < 3; x++)
@@ -16,7 +21,9 @@ public class CrossesCircles
         }
     }
 
-    // Очистка игрового поля
+    /**
+     * Очистка игрового поля
+     */
     public void clear()
     {
         for (int x = 0; x < 3; x++)
@@ -28,7 +35,13 @@ public class CrossesCircles
         }
     }
 
-    // Добавление крестика или нолика игроком
+    /** Добавление крестика или нолика игроком
+     * @param x номер столбца
+     * @param y номер строки
+     * @param z номер итерации
+     * @return
+     */
+    //
     public int add(int x, int y, int z)
     {
         if (x < 3 && y < 3)
@@ -59,6 +72,9 @@ public class CrossesCircles
         }
     }
 
+    /**
+     * @return Результат проверки заполнения игровой доски
+     */
     public int[] checkGameTable()
     {
         int x, y;

@@ -5,6 +5,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 
+/**
+ * Сервлет игровой инициализации
+ */
 @WebServlet("/StartServlet")
 public class StartServlet extends HttpServlet
 {

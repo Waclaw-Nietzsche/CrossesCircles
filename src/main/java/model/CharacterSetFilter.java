@@ -3,6 +3,9 @@ package model;
 import javax.servlet.*;
 import java.io.IOException;
 
+/**
+ * Фильтр UTF-8 с поддержкой кириллицы
+ */
 public class CharacterSetFilter implements Filter
 {
 
@@ -10,6 +13,13 @@ public class CharacterSetFilter implements Filter
     public void init(FilterConfig filterConfig) throws ServletException
     { }
 
+    /** Метод фильтрации получаемого контента
+     * @param request
+     * @param response
+     * @param next
+     * @throws IOException
+     * @throws ServletException
+     */
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain next) throws IOException, ServletException
     {
         request.setCharacterEncoding("UTF-8");

@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * Главный игровой сервлет
+ */
 @WebServlet("/PlayGameServlet")
 public class PlayGameServlet extends HttpServlet
 {
@@ -82,6 +85,13 @@ public class PlayGameServlet extends HttpServlet
             play(request, response, x, y);
     }
 
+    /** Обесречтвает игровой процесс и запросы к другим jsp при победе/ничьей
+     * @param request
+     * @param response
+     * @param x Столбец
+     * @param y Строка
+     * @throws IOException
+     */
     private void play(HttpServletRequest request, HttpServletResponse response, int x, int y) throws IOException
     {
         HttpSession session = request.getSession();
